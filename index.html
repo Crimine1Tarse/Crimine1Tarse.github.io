@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>☆ French Legends ☆</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --bg-main: #02030a;
+      --bg-panel: rgba(13, 16, 37, 0.9);
+      --accent-orange: #ff7a1a;
+      --accent-blue: #54c2ff;
+      --text-main: #e8f3ff;
+      --text-muted: #7c8da5;
+      --radius-lg: 18px;
+      --shadow-soft: 0 18px 60px rgba(0, 0, 0, 0.7);
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0;}
+
+    body{
+      margin:0;
+      background:var(--bg-main);
+      color:var(--text-main);
+      font-family:"Rajdhani",sans-serif;
+      padding:30px;
+      min-height:100vh;
+    }
+
+    h1,h2{
+      font-family:"Orbitron",sans-serif;
+      text-transform:uppercase;
+      letter-spacing:.12em;
+    }
+
+    h1{
+      text-align:center;
+      margin-bottom:40px;
+      font-size:2.4rem;
+      color:var(--accent-orange);
+      text-shadow:0 0 8px var(--accent-orange);
+    }
+
+    .container{
+      max-width:1500px;
+      margin:0 auto;
+    }
+
+    .block{
+      background:var(--bg-panel);
+      border-radius:var(--radius-lg);
+      box-shadow:var(--shadow-soft);
+      border:1px solid rgba(255,255,255,.12);
+      padding:24px 24px 32px;
+      margin-bottom:40px;
+      overflow-x:auto;
+    }
+
+    .block-header{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-end;
+      gap:1.5rem;
+      margin-bottom:10px;
+    }
+
+    .block-title{
+      font-size:1.4rem;
+      color:var(--accent-blue);
+      text-shadow:0 0 6px var(--accent-blue);
+    }
+
+    .block-meta{
+      font-size:.8rem;
+      color:var(--text-muted);
+      text-transform:uppercase;
+      letter-spacing:.16em;
+      white-space:nowrap;
+    }
+
+    /* TABLE */
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      font-size:.9rem;
+      min-width:900px;
+    }
+
+    th,td{
+      padding:8px 10px;
+      text-align:center;
+      white-space:nowrap;
+      border-top:1px solid #222842;
+    }
+
+    thead th{
+      background:#182040;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      font-weight:600;
+      color:var(--accent-orange);
+      border-bottom:2px solid var(--accent-orange);
+      box-shadow:0 0 8px var(--accent-orange);
+      position:sticky;
+      top:0;
+      z-index:2;
+      border-right: 1px solid #888888; /* Ajouté */
+}
+
+thead th:last-child {
+  border-right: none; /* Pour ne pas avoir de bordure à droite du dernier titre */
+}
+
+    tbody td{
+      background:#0f132d;
+    }
+
+    /* bandes horizontales comme sur ta capture */
+    tbody tr:nth-child(odd) td{
+      background:#0b1024;
+    }
+
+    tbody tr:hover td{
+      background:#1a1f4d;
+      transition:background .25s ease;
+    }
+
+    /* séparations de groupes (MK1 / MK2) */
+    .group-separator td{
+      border-top:3px solid rgba(255,255,255,.18);
+      box-shadow:0 -2px 0 rgba(0,0,0,.6);
+    }
+
+    .group-label{
+      text-align:left;
+      font-weight:700;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+      color:var(--accent-blue);
+    }
+
+    .group-label span{
+      font-size:.78rem;
+      color:var(--text-muted);
+      margin-left:.75rem;
+      text-transform:none;
+      letter-spacing:normal;
+    }
+
+    /* responsive mobile */
+    @media(max-width:900px){
+      table,thead,tbody,th,td,tr{display:block;}
+      thead tr{position:absolute;top:-9999px;left:-9999px;}
+      tr{margin-bottom:1rem;border-bottom:2px solid var(--accent-orange);}
+      td{
+        border:none;
+        position:relative;
+        padding-left:50%;
+        text-align:left;
+        white-space:normal;
+      }
+      td::before{
+        position:absolute;
+        top:8px;
+        left:10px;
+        width:45%;
+        white-space:nowrap;
+        font-weight:600;
+        color:var(--accent-orange);
+        content:attr(data-label);
+        text-transform:uppercase;
+        letter-spacing:.06em;
+      }
+      .group-label{
+        padding-left:0;
+        text-align:left;
+      }
+      .group-separator td{
+        border-top:none;
+        box-shadow:none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>☆ French Legends ☆</h1>
+
+    <div class="block">
+      <div class="block-header">
+        <h2 class="block-title">Robots – Palier 4</h2>
+        <span class="badge">Robots &nbsp;•&nbsp; Ressources &amp; remises</span>
+      </div>
+      <p class="sub">
+          Coût de mise à niveau des robots MK1 &amp; MK2, points de classement et remises jusqu’à
+          <strong>-40&nbsp;%</strong>, ainsi que la conversion en argent et or avec bonus premium.
+        </p>
+      <table aria-label="Coûts robots palier 4">
+        <thead>
+          <tr>
+            <th>Robot / Niveau</th>
+            <th>Argent</th>
+            <th>Or</th>
+            <th>Temps</th>
+            <th>Jetons</th>
+            <th>Points</th>
+            <th>Argent / pt</th>
+            <th>Or / pt</th>
+            <th>Argent -40%</th>
+            <th>Argent -35%</th>
+            <th>Argent -30%</th>
+            <th>Or x2 Premium</th>
+            <th>Points cumulés</th>
+            <th>Argent 0 %</th>
+            <th>Argent 40 %</th>
+            <th>Argent 35 %</th>
+            <th>Argent 30 %</th>
+            <th>Or x2 Premium (total)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- étiquette de groupe MK1 -->
+          <tr class="group-separator">
+            <td class="group-label" colspan="18">
+              MK1 <span>du niveau 1 au niveau 11</span>
+            </td>
+          </tr>
+
+          <!-- LIGNES MK1 (exemples – remplace / complète avec tes vraies données) -->
+          <tr>
+            <td data-label="Robot / Niveau">MK1 – Niveau 1</td>
+            <td data-label="Argent">-</td>
+            <td data-label="Or">-</td>
+            <td data-label="Temps">-</td>
+            <td data-label="Jetons">-</td>
+            <td data-label="Points">-</td>
+            <td data-label="Argent / pt">-</td>
+            <td data-label="Or / pt">-</td>
+            <td data-label="Argent -40%">-</td>
+            <td data-label="Argent -35%">-</td>
+            <td data-label="Argent -30%">-</td>
+            <td data-label="Or">-</td>
+            <td data-label="Points">-</td>
+            <td data-label="Argent">-</td>
+            <td data-label="Argent">-</td>
+            <td data-label="Argent">-</td>
+            <td data-label="Argent">-</td>
+            <td data-label="Or">-</td>
+          </tr>
+          <tr>
+            <td data-label="Robot / Niveau">MK1 – Niveau 2</td>
+            <td data-label="Argent">0,10 M</td>
+            <td data-label="Or">40</td>
+            <td data-label="Temps">2 h</td>
+            <td data-label="Jetons">-</td>
+            <td data-label="Points">25</td>
+            <td data-label="Argent / pt">0,10 M</td>
+            <td data-label="Or / pt">1,60</td>
+            <td data-label="Argent -40%">0,06 M</td>
+            <td data-label="Argent -35%">0,07 M</td>
+            <td data-label="Argent -30%">0,07 M</td>
+            <td data-label="Or">40</td>
+            <td data-label="Points">25</td>
+            <td data-label="Argent">0,10 M</td>
+            <td data-label="Argent">0,06 M</td>
+            <td data-label="Argent">0,07 M</td>
+            <td data-label="Argent">0,07 M</td>
+            <td data-label="Or">40</td>
+          </tr>
+          <tr>
+            <td data-label="Robot / Niveau">MK1 – Niveau 3</td>
+            <td data-label="Argent">0,20 M</td>
+            <td data-label="Or">80</td>
+            <td data-label="Temps">6 h</td>
+            <td data-label="Jetons">-</td>
+            <td data-label="Points">25</td>
+            <td data-label="Argent / pt">0,20 M</td>
+            <td data-label="Or / pt">3,20</td>
+            <td data-label="Argent -40%">0,12 M</td>
+            <td data-label="Argent -35%">0,13 M</td>
+            <td data-label="Argent -30%">0,14 M</td>
+            <td data-label="Or">80</td>
+            <td data-label="Points">50</td>
+            <td data-label="Argent">0,30 M</td>
+            <td data-label="Argent">0,18 M</td>
+            <td data-label="Argent">0,20 M</td>
+            <td data-label="Argent">0,21 M</td>
+            <td data-label="Or">120</td>
+          </tr>
+          <tr>
+            <td data-label="Robot / Niveau">MK1 – Niveau 4</td>
+            <td data-label="Argent">0,40 M</td>
+            <td data-label="Or">203</td>
+            <td data-label="Temps">12 h</td>
+            <td data-label="Jetons">-</td>
+            <td data-label="Points">25</td>
+            <td data-label="Argent / pt">0,40 M</td>
+            <td data-label="Or / pt">8,12</td>
+            <td data-label="Argent -40%">0,24 M</td>
+            <td data-label="Argent -35%">0,26 M</td>
+            <td data-label="Argent -30%">0,28 M</td>
+            <td data-label="Or">203</td>
+            <td data-label="Points">75</td>
+            <td data-label="Argent">0,70 M</td>
+            <td data-label="Argent">0,42 M</td>
+            <td data-label="Argent">0,46 M</td>
+            <td data-label="Argent">0,49 M</td>
+            <td data-label="Or">323</td>
+          </tr>
+          <tr>
+            <td data-label="Robot / Niveau">MK1 – Niveau 5</td>
+            <td data-label="Argent">0,80 M</td>
+            <td data-label="Or">269</td>
+            <td data-label="Temps">24 h</td>
+            <td data-label="Jetons">-</td>
+            <td data-label="Points">25</td>
+            <td data-label="Argent / pt">0,80 M</td>
+            <td data-label="Or / pt">10,76</td>
+            <td data-label="Argent -40%">0,48 M</td>
+            <td data-label="Argent -35%">0,52 M</td>
+            <td data-label="Argent -30%">0,56 M</td>
+            <td data-label="Or">269</td>
+            <td data-label="Points">100</td>
+            <td data-label="Argent">1,50 M</td>
+            <td data-label="Argent">0,90 M</td>
+            <td data-label="Argent">1,00 M</td>
+            <td data-label="Argent">1,06 M</td>
+            <td data-label="Or">592</td>
+          </tr>
+          <tr>
+            <td data-label="Robot / Niveau">MK1 – Niveau 6</td>
+            <td data-label="Argent">2,00 M</td>
+            <td data-label="Or">343</td>
+            <td data-label="Temps">48 h</td>
+            <td data-label="Jetons">-</td>
+            <td data-label="Points">50</td>
+            <td data-label="Argent / pt">0,04 M</td>
+            <td data-label="Or / pt">6,86</td>
+            <td data-label="Argent -40%">1,20 M</td>
+            <td data-label="Argent -35%">1,30 M</td>
+            <td data-label="Argent -30%">1,40 M</td>
+            <td data-label="Or">343</td>
+            <td data-label="Points">150</td>
+            <td data-label="Argent">3,50 M</td>
+            <td data-label="Argent">2,10 M</td>
+            <td data-label="Argent">2,30 M</td>
+            <td data-label="Argent">2,44 M</td>
+            <td data-label="Or">935</td>
+          </tr>
+          <tr>
+            <td data-label="Robot / Niveau">MK1 – Niveau 7</td>
+            <td data-label="Argent">6,00 M</td>
+            <td data-label="Or">703</td>
+            <td data-label="Temps">120 h</td>
+            <td data-label="Jetons">-</td>
+            <td data-label="Points">50</td>
+            <td data-label="Argent / pt">0,12 M</td>
+            <td data-label="Or / pt">14,06</td>
+            <td data-label="Argent -40%">3,60 M</td>
+            <td data-label="Argent -35%">3,90 M</td>
+            <td data-label="Argent -30%">4,20 M</td>
+            <td data-label="Or">703</td>
+            <td data-label="Points">200</td>
+            <td data-label="Argent">9,50 M</td>
+            <td data-label="Argent">5,70 M</td>
+            <td data-label="Argent">6,20 M</td>
+            <td data-label="Argent">6,64 M</td>
+            <td data-label="Or">1638</td>
+          </tr>
+          <tr>
+            <td data-label="Robot / Niveau">MK1 – Niveau 8</td>
+            <td data-label="Argent">8,00 M</td>
+            <td data-label="Or">502</td>
+            <td data-label="Temps">120 h</td>
+            <td data-label="Jetons">-</td>
+            <td data-label="Points">90</td>
+            <td data-label="Argent / pt">0,09 M</td>
+            <td data-label="Or / pt">5,58</td>
+            <td data-label="Argent -40%">4,80 M</td>
+            <td data-label="Argent -35%">5,20 M</td>
+            <td data-label="Argent -30%">5,60 M</td>
+            <td data-label="Or">502</td>
+            <td data-label="Points">290</td>
+            <td data-label="Argent">17,70 M</td>
+            <td data-label="Argent">10,50 M</td>
+            <td data-label="Argent">11,40 M</td>
+            <td data-label="Argent">12,24 M</td>
+            <td data-label="Or">2140</td>
+          </tr>
+          <tr>
+            <td data-label="Robot / Niveau">MK1 – Niveau 9</td>
+            <td data-label="Argent">10,00 M</td>
+            <td data-label="Or">774</td>
+            <td data-label="Temps">144 h</td>
+            <td data-label="Jetons">-</td>
+            <td data-label="Points">90</td>
+            <td data-label="Argent / pt">0,11 M</td>
+            <td data-label="Or / pt">8,60</td>
+            <td data-label="Argent -40%">6,00 M</td>
+            <td data-label="Argent -35%">6,50 M</td>
+            <td data-label="Argent -30%">7,00 M</td>
+            <td data-label="Or">774</td>
+            <td data-label="Points">380</td>
+            <td data-label="Argent">27,70 M</td>
+            <td data-label="Argent">16,50 M</td>
+            <td data-label="Argent">18,00 M</td>
+            <td data-label="Argent">19,24 M</td>
+            <td data-label="Or">2914</td>
+          </tr>
+          <tr>
+            <td data-label="Robot / Niveau">MK1 – Niveau 10</td>
+            <td data-label="Argent">15,00 M</td>
+            <td data-label="Or">877</td>
+            <td data-label="Temps">144 h</td>
+            <td data-label="Jetons">-</td>
+            <td data-label="Points">95</td>
+            <td data-label="Argent / pt">0,16 M</td>
+            <td data-label="Or / pt">9,23</td>
+            <td data-label="Argent -40%">9,00 M</td>
+            <td data-label="Argent -35%">9,75 M</td>
+            <td data-label="Argent -30%">10,50 M</td>
+            <td data-label="Or">877</td>
+            <td data-label="Points">475</td>
+            <td data-label="Argent">42,70 M</td>
+            <td data-label="Argent">25,50 M</td>
+            <td data-label="Argent">27,75 M</td>
+            <td data-label="Argent">29,74 M</td>
+            <td data-label="Or">3791</td>
+          </tr>
+          <tr>
+            <td data-label="Robot / Niveau">MK1 – Niveau 11</td>
+            <td data-label="Argent">20,00 M</td>
+            <td data-label="Or">932</td>
+            <td data-label="Temps">144 h</td>
+            <td data-label="Jetons">-</td>
+            <td data-label="Points">95</td>
+            <td data-label="Argent / pt">0,21 M</td>
+            <td data-label="Or / pt">9,81</td>
+            <td data-label="Argent -40%">12,00 M</td>
+            <td data-label="Argent -35%">13,00 M</td>
+            <td data-label="Argent -30%">14,00 M</td>
+            <td data-label="Or">932</td>
+            <td data-label="Points">570</td>
+            <td data-label="Argent">62,70 M</td>
+            <td data-label="Argent">37,50 M</td>
+            <td data-label="Argent">40,75 M</td>
+            <td data-label="Argent">43,74 M</td>
+            <td data-label="Or">4723</td>
+          </tr>
+          <tr>
+            <td data-label="Robot / Niveau">MK1 – Niveau 12</td>
+            <td data-label="Argent">25,00 M</td>
+            <td data-label="Or">969</td>
+            <td data-label="Temps">150 h</td>
+            <td data-label="Jetons">-</td>
+            <td data-label="Points">125</td>
+            <td data-label="Argent / pt">0,20 M</td>
+            <td data-label="Or / pt">7,75</td>
+            <td data-label="Argent -40%">15,00 M</td>
+            <td data-label="Argent -35%">16,25 M</td>
+            <td data-label="Argent -30%">17,50 M</td>
+            <td data-label="Or">969</td>
+            <td data-label="Points">695</td>
+            <td data-label="Argent">87,70 M</td>
+            <td data-label="Argent">52,50 M</td>
+            <td data-label="Argent">57,00 M</td>
+            <td data-label="Argent">61,24 M</td>
+            <td data-label="Or">5692</td>
+          </tr>
+
+          <!-- étiquette de groupe MK2 -->
+          <tr class="group-separator">
+            <td class="group-label" colspan="18">
+              MK2 <span>du niveau 1 au niveau 12</span>
+            </td>
+          </tr>
+
+          <!-- LIGNES MK2 (exemples) -->
+          <tr>
+            <td data-label="Robot / Niveau">MK2 – Niveau 1</td>
+            <td data-label="Argent">2,70 M</td>
+            <td data-label="Or">181</td>
+            <td data-label="Temps">12 h</td>
+            <td data-label="Jetons">-</td>
+            <td data-label="Points">125</td>
+            <td data-label="Argent / pt">0,02 M</td>
+            <td data-label="Or / pt">1,45</td>
+            <td data-label="Argent -40%">1,62 M</td>
+            <td data-label="Argent -35%">1,75 M</td>
+            <td data-label="Argent -30%">1,89 M</td>
+            <td data-label="Or">181</td>
+            <td data-label="Points">820</td>
+            <td data-label="Argent">88,70 M</td>
+            <td data-label="Argent">54,12 M</td>
+            <td data-label="Argent">58,75 M</td>
+            <td data-label="Argent">63,13 M</td>
+            <td data-label="Or">5873</td>
+          </tr>
+          <tr>
+            <td data-label="Robot / Niveau">MK2 – Niveau 2</td>
+            <td data-label="Argent">3,60 M</td>
+            <td data-label="Or">315</td>
+            <td data-label="Temps">24 h</td>
+            <td data-label="Jetons">-</td>
+            <td data-label="Points">130</td>
+            <td data-label="Argent / pt">0,03 M</td>
+            <td data-label="Or / pt">2,42</td>
+            <td data-label="Argent -40%">2,16 M</td>
+            <td data-label="Argent -35%">2,34 M</td>
+            <td data-label="Argent -30%">2,52 M</td>
+            <td data-label="Or">315</td>
+            <td data-label="Points">950</td>
+            <td data-label="Argent">92,30 M</td>
+            <td data-label="Argent">56,28 M</td>
+            <td data-label="Argent">61,09 M</td>
+            <td data-label="Argent">65,65 M</td>
+            <td data-label="Or">6188</td>
+          </tr>
+          <tr>
+            <td data-label="Robot / Niveau">MK2 – Niveau 3</td>
+            <td data-label="Argent">4,50 M</td>
+            <td data-label="Or">459</td>
+            <td data-label="Temps">24 h</td>
+            <td data-label="Jetons">-</td>
+            <td data-label="Points">135</td>
+            <td data-label="Argent / pt">0,03 M</td>
+            <td data-label="Or / pt">3,40</td>
+            <td data-label="Argent -40%">2,70 M</td>
+            <td data-label="Argent -35%">2,93 M</td>
+            <td data-label="Argent -30%">3,15 M</td>
+            <td data-label="Or">459</td>
+            <td data-label="Points">1085</td>
+            <td data-label="Argent">96,80 M</td>
+            <td data-label="Argent">59,21 M</td>
+            <td data-label="Argent">64,24 M</td>
+            <td data-label="Argent">69,10 M</td>
+            <td data-label="Or">6647</td>
+          </tr>
+          <tr>
+            <td data-label="Robot / Niveau">MK2 – Niveau 4</td>
+            <td data-label="Argent">6,30 M</td>
+            <td data-label="Or">459</td>
+            <td data-label="Temps">48 h</td>
+            <td data-label="Jetons">-</td>
+            <td data-label="Points">140</td>
+            <td data-label="Argent / pt">0,04 M</td>
+            <td data-label="Or / pt">3,28</td>
+            <td data-label="Argent -40%">3,78 M</td>
+            <td data-label="Argent -35%">4,10 M</td>
+            <td data-label="Argent -30%">4,41 M</td>
+            <td data-label="Or">459</td>
+            <td data-label="Points">1225</td>
+            <td data-label="Argent">103,10 M</td>
+            <td data-label="Argent">62,99 M</td>
+            <td data-label="Argent">68,34 M</td>
+            <td data-label="Argent">73,51 M</td>
+            <td data-label="Or">7106</td>
+          </tr>
+          <tr>
+            <td data-label="Robot / Niveau">MK2 – Niveau 5</td>
+            <td data-label="Argent">8,10 M</td>
+            <td data-label="Or">459</td>
+            <td data-label="Temps">48 h</td>
+            <td data-label="Jetons">-</td>
+            <td data-label="Points">145</td>
+            <td data-label="Argent / pt">0,06 M</td>
+            <td data-label="Or / pt">3,17</td>
+            <td data-label="Argent -40%">4,86 M</td>
+            <td data-label="Argent -35%">5,27 M</td>
+            <td data-label="Argent -30%">5,67 M</td>
+            <td data-label="Or">459</td>
+            <td data-label="Points">1370</td>
+            <td data-label="Argent">111,20 M</td>
+            <td data-label="Argent">67,85 M</td>
+            <td data-label="Argent">73,61 M</td>
+            <td data-label="Argent">79,18 M</td>
+            <td data-label="Or">7565</td>
+          </tr>
+          <tr>
+            <td data-label="Robot / Niveau">MK2 – Niveau 6</td>
+            <td data-label="Argent">10,80 M</td>
+            <td data-label="Or">459</td>
+            <td data-label="Temps">48 h</td>
+            <td data-label="Jetons">-</td>
+            <td data-label="Points">150</td>
+            <td data-label="Argent / pt">0,07 M</td>
+            <td data-label="Or / pt">3,06</td>
+            <td data-label="Argent -40%">6,48 M</td>
+            <td data-label="Argent -35%">7,02 M</td>
+            <td data-label="Argent -30%">7,56 M</td>
+            <td data-label="Or">459</td>
+            <td data-label="Points">1520</td>
+            <td data-label="Argent">122,00 M</td>
+            <td data-label="Argent">74,33 M</td>
+            <td data-label="Argent">80,63 M</td>
+            <td data-label="Argent">86,74 M</td>
+            <td data-label="Or">8024</td>
+          </tr>
+          <tr>
+            <td data-label="Robot / Niveau">MK2 – Niveau 7</td>
+            <td data-label="Argent">14,40 M</td>
+            <td data-label="Or">459</td>
+            <td data-label="Temps">48 h</td>
+            <td data-label="Jetons">-</td>
+            <td data-label="Points">150</td>
+            <td data-label="Argent / pt">0,10 M</td>
+            <td data-label="Or / pt">3,06</td>
+            <td data-label="Argent -40%">8,64 M</td>
+            <td data-label="Argent -35%">9,36 M</td>
+            <td data-label="Argent -30%">10,08 M</td>
+            <td data-label="Or">459</td>
+            <td data-label="Points">1670</td>
+            <td data-label="Argent">136,40 M</td>
+            <td data-label="Argent">83,0 M</td>
+            <td data-label="Argent">90,0 M</td>
+            <td data-label="Argent">96,82 M</td>
+            <td data-label="Or">8483</td>
+          </tr>
+          <tr>
+            <td data-label="Robot / Niveau">MK2 – Niveau 8</td>
+            <td data-label="Argent">19,80 M</td>
+            <td data-label="Or">459</td>
+            <td data-label="Temps">48 h</td>
+            <td data-label="Jetons">-</td>
+            <td data-label="Points">150</td>
+            <td data-label="Argent / pt">0,13 M</td>
+            <td data-label="Or / pt">3,06</td>
+            <td data-label="Argent -40%">11,88 M</td>
+            <td data-label="Argent -35%">12,87 M</td>
+            <td data-label="Argent -30%">13,86 M</td>
+            <td data-label="Or">459</td>
+            <td data-label="Points">1820</td>
+            <td data-label="Argent">156,20 M</td>
+            <td data-label="Argent">95,0 M</td>
+            <td data-label="Argent">103,0 M</td>
+            <td data-label="Argent">111,0 M</td>
+            <td data-label="Or">8942</td>
+          </tr>
+          <tr>
+            <td data-label="Robot / Niveau">MK2 – Niveau 9</td>
+            <td data-label="Argent">27,00 M</td>
+            <td data-label="Or">459</td>
+            <td data-label="Temps">48 h</td>
+            <td data-label="Jetons">-</td>
+            <td data-label="Points">150</td>
+            <td data-label="Argent / pt">0,18 M</td>
+            <td data-label="Or / pt">3,06</td>
+            <td data-label="Argent -40%">16,20 M</td>
+            <td data-label="Argent -35%">17,55 M</td>
+            <td data-label="Argent -30%">18,90 M</td>
+            <td data-label="Or">459</td>
+            <td data-label="Points">1970</td>
+            <td data-label="Argent">183,20 M</td>
+            <td data-label="Argent">111,2 M</td>
+            <td data-label="Argent">120,6 M</td>
+            <td data-label="Argent">129,9 M</td>
+            <td data-label="Or">9401</td>
+          </tr>
+          <tr>
+            <td data-label="Robot / Niveau">MK2 – Niveau 10</td>
+            <td data-label="Argent">37,00 M</td>
+            <td data-label="Or">459</td>
+            <td data-label="Temps">48 h</td>
+            <td data-label="Jetons">-</td>
+            <td data-label="Points">150</td>
+            <td data-label="Argent / pt">0,25 M</td>
+            <td data-label="Or / pt">3,06</td>
+            <td data-label="Argent -40%">22,20 M</td>
+            <td data-label="Argent -35%">24,05 M</td>
+            <td data-label="Argent -30%">25,90 M</td>
+            <td data-label="Or">459</td>
+            <td data-label="Points">2120</td>
+            <td data-label="Argent">220,20 M</td>
+            <td data-label="Argent">133,4 M</td>
+            <td data-label="Argent">144,7 M</td>
+            <td data-label="Argent">155,8 M</td>
+            <td data-label="Or">9860</td>
+          </tr>
+          <tr>
+            <td data-label="Robot / Niveau">MK2 – Niveau 11</td>
+            <td data-label="Argent">45,00 M</td>
+            <td data-label="Or">459</td>
+            <td data-label="Temps">48 h</td>
+            <td data-label="Jetons">-</td>
+            <td data-label="Points">150</td>
+            <td data-label="Argent / pt">0,30 M</td>
+            <td data-label="Or / pt">3,06</td>
+            <td data-label="Argent -40%">27,00 M</td>
+            <td data-label="Argent -35%">29,25 M</td>
+            <td data-label="Argent -30%">31,50 M</td>
+            <td data-label="Or">459</td>
+            <td data-label="Points">2270</td>
+            <td data-label="Argent">265,20 M</td>
+            <td data-label="Argent">160,4 M</td>
+            <td data-label="Argent">173,9 M</td>
+            <td data-label="Argent">187,3 M</td>
+            <td data-label="Or">10319</td>
+          </tr>
+          <tr>
+            <td data-label="Robot / Niveau">MK2 – Niveau 12</td>
+            <td data-label="Argent">55,00 M</td>
+            <td data-label="Or">459</td>
+            <td data-label="Temps">48 h</td>
+            <td data-label="Jetons">-</td>
+            <td data-label="Points">150</td>
+            <td data-label="Argent / pt">0,36 M</td>
+            <td data-label="Or / pt">3,06</td>
+            <td data-label="Argent -40%">33,00 M</td>
+            <td data-label="Argent -35%">35,75 M</td>
+            <td data-label="Argent -30%">38,50 M</td>
+            <td data-label="Or">459</td>
+            <td data-label="Points">2420</td>
+            <td data-label="Argent">318,20 M</td>
+            <td data-label="Argent">190,2 M</td>
+            <td data-label="Argent">206,2 M</td>
+            <td data-label="Argent">222,0 M</td>
+            <td data-label="Or">10778</td>
+          </tr>
+                    <!-- étiquette de groupe MK3 -->
+          <tr class="group-separator">
+            <td class="group-label" colspan="18">
+              MK3 <span></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td data-label="Robot / Niveau">MK2 – Niveau 12 => MK3</td>
+            <td data-label="Argent">-</td>
+            <td data-label="Or">-</td>
+            <td data-label="Temps">-</td>
+            <td data-label="Jetons">3</td>
+            <td data-label="Points">-</td>
+            <td data-label="Argent / pt">-</td>
+            <td data-label="Or / pt">-</td>
+            <td data-label="Argent -40%">-</td>
+            <td data-label="Argent -35%">-</td>
+            <td data-label="Argent -30%">-</td>
+            <td data-label="Or">-</td>
+            <td data-label="Points">-</td>
+            <td data-label="Argent">-</td>
+            <td data-label="Argent">-</td>
+            <td data-label="Argent">-</td>
+            <td data-label="Argent">-</td>
+            <td data-label="Or">-</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+    
+    <!-- Nouveau block pour le deuxième tableau -->
+  <div class="block">
+  <div class="block-header">
+    <h2 class="block-title">Pilotes</h2>
+    <span class="badge">Pilotes &nbsp;•&nbsp; Memorium</span>
+  </div>
+  <p style="margin-top: 4px; margin-bottom: 16px; color: var(--text-muted); font-size: 0.9rem;">
+      Coût en <strong>Memorium</strong> pour la progression des pilotes, avec remises de
+      <strong>25&nbsp;%</strong>, <strong>20&nbsp;%</strong> et <strong>15&nbsp;%</strong>.
+      Les points cumulés restent ici à <span class="pill">0 (non calculés)</span>.
+    </p>
+  <table aria-label="Coûts robots palier 5">
+    <thead>
+      <tr>
+        <th>Niveaux</th>
+        <th>Memorium</th>
+        <th>Points / niveau</th>
+        <th>Points / promotion</th>
+        <th>Points totaux</th>
+        <th>Memorium -25&nbsp;%</th>
+        <th>Memorium -20&nbsp;%</th>
+        <th>Memorium -15&nbsp;%</th>
+        <th>Points cumulés</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tbody>
+  <tr>
+    <td>1 à 10</td>
+    <td>-</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>11 à 20</td>
+    <td>150</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>112</td>
+    <td>120</td>
+    <td>127</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>21 à 30</td>
+    <td>375</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>281</td>
+    <td>300</td>
+    <td>318</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>31 à 40</td>
+    <td>525</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>393</td>
+    <td>420</td>
+    <td>446</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>41 à 50</td>
+    <td>750</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>562</td>
+    <td>600</td>
+    <td>637</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>51 à 60</td>
+    <td>750</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>562</td>
+    <td>600</td>
+    <td>637</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>61 à 70</td>
+    <td>1 jeton</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1 jeton</td>
+    <td>1 jeton</td>
+    <td>1 jeton</td>
+    <td>0</td>
+  </tr>
+</tbody>
+<tfoot>
+  <tr>
+    <td>Prix total</td>
+    <td>2550</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1910</td>
+    <td>2040</td>
+    <td>2165</td>
+    <td>0</td>
+  </tr>
+</tfoot>
+      <!-- autres lignes -->
+    </tbody>
+  </table>
+</div>
+
+<div class="block">
+  <div class="block-header">
+    <h2 class="block-title">Drones T4</h2>
+    <span class="badge">Drones &nbsp;•&nbsp; Micro‑puces & points</span>
+  </div>
+  <p style="margin-top: 4px; margin-bottom: 16px; color: var(--text-muted); font-size: 0.9rem;">
+      Détail des niveaux du drone T4 : micro‑puces nécessaires, jetons, points gagnés et
+          micro‑puces requises après remises. La dernière partie indique aussi les micro‑puces
+          cumulées pour chaque niveau.
+    </p>
+  <table aria-label="Coûts robots palier 5">
+    <thead>
+      <tr>
+        <th>Niveau</th>
+        <th>Micro‑puces</th>
+        <th>Jetons</th>
+        <th>Points</th>
+        <th>Points / micro‑puces</th>
+        <th>micro‑puces -25&nbsp;%</th>
+        <th>micro‑puces -20&nbsp;%</th>
+        <th>micro‑puces -15&nbsp;%</th>
+        <th>Points cumulés</th>
+        <th>Micro‑puces cumulées</th>
+        <th>Micro‑puces cumulées -25&nbsp;%</th>
+        <th>Micro‑puces cumulées -20&nbsp;%</th>
+        <th>Micro‑puces cumulées -15&nbsp;%</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tbody>
+
+  <tr>
+    <td>1</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>40</td>
+    <td>-</td>
+    <td>120</td>
+    <td>3</td>
+    <td>30</td>
+    <td>32</td>
+    <td>34</td>
+    <td>120</td>
+    <td>40</td>
+    <td>30</td>
+    <td>32</td>
+    <td>34</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>60</td>
+    <td>-</td>
+    <td>180</td>
+    <td>3</td>
+    <td>45</td>
+    <td>48</td>
+    <td>51</td>
+    <td>300</td>
+    <td>100</td>
+    <td>75</td>
+    <td>80</td>
+    <td>85</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>90</td>
+    <td>-</td>
+    <td>270</td>
+    <td>3</td>
+    <td>67</td>
+    <td>72</td>
+    <td>76</td>
+    <td>570</td>
+    <td>190</td>
+    <td>142</td>
+    <td>152</td>
+    <td>161</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>100</td>
+    <td>-</td>
+    <td>300</td>
+    <td>3</td>
+    <td>75</td>
+    <td>80</td>
+    <td>85</td>
+    <td>870</td>
+    <td>290</td>
+    <td>217</td>
+    <td>232</td>
+    <td>246</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>100</td>
+    <td>-</td>
+    <td>300</td>
+    <td>3</td>
+    <td>75</td>
+    <td>80</td>
+    <td>85</td>
+    <td>1170</td>
+    <td>390</td>
+    <td>292</td>
+    <td>312</td>
+    <td>331</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>100</td>
+    <td>-</td>
+    <td>300</td>
+    <td>3</td>
+    <td>75</td>
+    <td>80</td>
+    <td>85</td>
+    <td>1470</td>
+    <td>490</td>
+    <td>367</td>
+    <td>392</td>
+    <td>416</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>120</td>
+    <td>-</td>
+    <td>360</td>
+    <td>3</td>
+    <td>90</td>
+    <td>96</td>
+    <td>102</td>
+    <td>1830</td>
+    <td>610</td>
+    <td>457</td>
+    <td>488</td>
+    <td>518</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>120</td>
+    <td>-</td>
+    <td>360</td>
+    <td>3</td>
+    <td>90</td>
+    <td>96</td>
+    <td>102</td>
+    <td>2190</td>
+    <td>730</td>
+    <td>547</td>
+    <td>584</td>
+    <td>620</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>130</td>
+    <td>-</td>
+    <td>390</td>
+    <td>3</td>
+    <td>97</td>
+    <td>104</td>
+    <td>110</td>
+    <td>2580</td>
+    <td>860</td>
+    <td>644</td>
+    <td>688</td>
+    <td>730</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>140</td>
+    <td>-</td>
+    <td>420</td>
+    <td>3</td>
+    <td>105</td>
+    <td>112</td>
+    <td>119</td>
+    <td>3000</td>
+    <td>1000</td>
+    <td>749</td>
+    <td>800</td>
+    <td>849</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>-</td>
+    <td>1</td>
+    <td>600</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>3600</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Prix Total</td>
+    <td>1000</td>
+    <td>1</td>
+    <td>3600</td>
+    <td>-</td>
+    <td>749</td>
+    <td>800</td>
+    <td>849</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  
+  
+  
+      <!-- autres lignes -->
+    </tbody>
+  </table>
+</div>
+  </div>
+</body>
+</html>
